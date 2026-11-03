@@ -1,0 +1,41 @@
+{
+  "outputStyle": "Mentor Rails",
+  "permissions": {
+    "defaultMode": "default",
+    "allow": [
+      "Bash(bin/rails test *)",
+      "Bash(bin/rails test)",
+      "Bash(bin/rails routes *)",
+      "Bash(bin/rails routes)",
+      "Bash(bin/rails about)",
+      "Bash(bin/rubocop *)",
+      "Bash(bin/rubocop)",
+      "Bash(bin/brakeman *)",
+      "Bash(bin/brakeman)",
+      "Bash(git status *)",
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git diff)",
+      "Bash(git log *)",
+      "Bash(git show *)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(git commit *)",
+      "Bash(bin/rails db:*)",
+      "Bash(bin/rails generate *)",
+      "Bash(bundle add *)",
+      "Bash(bundle install *)"
+    ],
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./config/master.key)",
+      "Read(./config/credentials/*.key)",
+      "Bash(bin/rails db:drop *)",
+      "Bash(bin/rails db:reset *)",
+      "Bash(git push --force *)",
+      "Bash(rm -rf *)"
+    ]
+  }
+}
